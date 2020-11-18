@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.spinner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-container {
+  background-color: rgb(115, 190, 255);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  padding: 0.8em 0em;
+}
+nav h2 {
+  margin: auto;
+  margin-left: 0;
+  color: aliceblue;
+}
+.cart-icon-container {
+  position: relative;
+}
+.cart-icon {
+  margin: auto;
+  margin-right: 0;
+  fill: aliceblue;
+  width: 60px;
+}
+.cart-icon-container .amount-container {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 35px;
+  height: 35px;
+  background-color: rgb(20, 149, 255);
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  border-radius: 50%;
+}
+.cart-icon-container .amount-container p {
+  font-size: 1.2em;
+  margin: auto;
+}
+.cart-content {
+  width: 60%;
+  margin: 2em auto;
+}
+.cart-content h1 {
+  margin-bottom: 1em;
+  text-align: center;
+  color: rgb(63, 63, 63);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.6em;
+}
+.item img {
+  width: 90px;
+}
+.info {
+  display: flex;
+}
+.info div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em 0em;
+}
+.info-price {
+  letter-spacing: 0.1em;
+}
+.info-price h3 {
+  margin-bottom: 0.3em;
+}
+.item .info button {
+  border: none;
+  background: none;
+  text-align: left;
+  color: rgb(117, 181, 255);
+  letter-spacing: 0.1em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.item .info button:hover {
+  color: rgb(198, 225, 255);
+}
+.amount-change {
+  width: 20px;
+  background: none;
+  border: none;
+  fill: rgb(117, 181, 255);
+  height: 30px;
+  cursor: pointer;
+}
+.amount-text {
+  text-align: center;
+  margin: 0.4em 0em;
+}
+.amount-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.total {
+  font-weight: bold;
+  color: rgb(0, 52, 87);
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0em;
+  font-size: 1.2em;
+}
+.total p {
+}
+hr {
+  margin-top: 1em;
+  border-top: 3px solid rgb(0, 52, 87);
+}
+.clear-btn {
+  background: none;
+  border: 1px solid red;
+  border-radius: 5px;
+  color: red;
+  padding: 0.5em;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.clear-btn:hover {
+  color: aliceblue;
+  background-color: red;
+}
